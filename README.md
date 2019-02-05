@@ -1,6 +1,6 @@
 # Genesis Starter Theme
 
-[![WordPress](https://img.shields.io/badge/wordpress-4.9.8%20tested-brightgreen.svg)]() [![License](https://img.shields.io/badge/license-GPL--3.0--or--later-blue.svg)](https://github.com/seothemes/genesis-starter-theme/blob/master/LICENSE.md)
+[![WordPress](https://img.shields.io/badge/wordpress-4.9.8%20tested-brightgreen.svg)]() [![License](https://img.shields.io/badge/license-GPL--3.0--or--later-blue.svg)](https://github.com/seothemes/base/blob/master/LICENSE.md)
 
 A developer-friendly starter theme used for creating commercial child themes for the Genesis Framework.
 
@@ -29,7 +29,7 @@ Check out the [live demo](https://demo.seothemes.com/genesis-starter)
 
 The Genesis Starter Theme aims to modernize, organize and enhance some aspects of Genesis child theme development. Take a look at what is waiting for you:
 
-- [Bourbon](https://github.com/seothemes/genesis-starter-theme/tree/master/resources/scss) as a lightweight Sass toolkit
+- [Bourbon](https://github.com/seothemes/base/tree/master/resources/scss) as a lightweight Sass toolkit
 - [Gulp](https://gulpjs.com/) for automating development build tasks
 - [Browsersync](https://browsersync.io/) for synchronized browser testing
 - [Config-based](https://www.alainschlesser.com/config-files-for-reusable-code/), OOP modular architecture
@@ -60,7 +60,7 @@ The Genesis Starter Theme aims to modernize, organize and enhance some aspects o
 Install the latest development version of the Genesis Starter Theme using Composer from your WordPress themes directory (replace `your-theme-name` below with the name of your theme):
 
 ```shell
-composer create-project seothemes/genesis-starter-theme your-theme-name dev-master && cd "$(\ls -1dt ./*/ | head -n 1)" && sh setup.sh
+composer create-project seothemes/base your-theme-name dev-master && cd "$(\ls -1dt ./*/ | head -n 1)" && sh setup.sh
 ```
 
 ### Individual commands:
@@ -68,7 +68,7 @@ composer create-project seothemes/genesis-starter-theme your-theme-name dev-mast
 Install the latest development version of the Genesis Starter Theme using Composer from your WordPress themes directory (replace `your-theme-name` below with the name of your theme):
 
 ```shell
-composer create-project seothemes/genesis-starter-theme your-theme-name dev-master
+composer create-project seothemes/base your-theme-name dev-master
 ```
 
 Navigate into the theme's root directory:
@@ -87,7 +87,7 @@ sh setup.sh
 
 The Genesis Starter Theme includes a powerful setup script which automates the process of updating theme details:
 
-<a href="https://github.com/seothemes/genesis-starter-theme/blob/master/setup.sh" target="_blank"><img src="https://seothemes.com/wp-content/uploads/2018/07/genesis-starter-theme-setup-script.png" alt="Genesis Starter Theme setup script" width="500"></a>
+<a href="https://github.com/seothemes/base/blob/master/setup.sh" target="_blank"><img src="https://seothemes.com/wp-content/uploads/2018/07/base-setup-script.png" alt="Genesis Starter Theme setup script" width="500"></a>
 
 It replaces the following details with your own:
 
@@ -105,7 +105,7 @@ The Genesis Starter Theme is intended to be used with [SEO Themes Core](https://
 
 Components are only loaded when a config key is provided. They can be added or removed depending on the requirements of your project. For example, to remove the PluginActivation component, simply remove it's config key from the return statement in `config/defaults.php`.
 
-The `app` directory is provided to house project-specific PHP files if additional functionality is required. It comes pre-configured with PSR-4 autoloading. Custom components can be created in the same way other Core components are, by first creating a class which extends the `Component` class and then adding it's configuration to the theme's config file. An [Example Component](https://github.com/seothemes/genesis-starter-theme/blob/master/app/Example.php) is included with the theme to get you started.
+The `app` directory is provided to house project-specific PHP files if additional functionality is required. It comes pre-configured with PSR-4 autoloading. Custom components can be created in the same way other Core components are, by first creating a class which extends the `Component` class and then adding it's configuration to the theme's config file. An [Example Component](https://github.com/seothemes/base/blob/master/app/Example.php) is included with the theme to get you started.
 
 Project details such as theme name, author, version number etc should only ever be changed from the `package.json` file. The Gulp build task reads this file and automatically places the relevant information to the correct locations throughout the theme. 
 
@@ -147,13 +147,13 @@ your-theme-name/    # → Root directory
 
 ## Contributing
 
-Contributions are welcome from everyone. We have [contributing guidelines](https://github.com/seothemes/genesis-starter-theme/blob/master/.github/CONTRIBUTING.md) to help you get started.
+Contributions are welcome from everyone. We have [contributing guidelines](https://github.com/seothemes/base/blob/master/.github/CONTRIBUTING.md) to help you get started.
 
 ## Authors
 
-<a href="https://seothemes.com" target="_blank"><img src="https://seothemes.com/wp-content/uploads/2018/07/seothemes-genesis-starter-theme.png" alt="SEO Themes logo" width="150"></a> &nbsp; <a href="https://github.com/d2themes" target="_blank"><img src="https://seothemes.com/wp-content/uploads/2018/08/d2themes.png" alt="D2 Themes logo" width="150"></a>
+<a href="https://seothemes.com" target="_blank"><img src="https://seothemes.com/wp-content/uploads/2018/07/seothemes-base.png" alt="SEO Themes logo" width="150"></a> &nbsp; <a href="https://github.com/d2themes" target="_blank"><img src="https://seothemes.com/wp-content/uploads/2018/08/d2themes.png" alt="D2 Themes logo" width="150"></a>
 
-See also the list of [contributors](https://github.com/seothemes/genesis-starter-theme/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/seothemes/base/graphs/contributors) who participated in this project.
 
 ## Special Thanks
 

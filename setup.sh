@@ -3,11 +3,11 @@
 
 # Defaults
 default_name="Genesis Starter Theme"
-default_id="genesis-starter-theme"
+default_id="base"
 default_author="SEO Themes"
 default_author_url="https://seothemes.com"
 default_url="genesis-starter.test"
-default_namespace="SeoThemes\GenesisStarterTheme"
+default_namespace="SeoThemes\Base"
 default_company="${default_namespace%\\*}"
 default_package="${default_namespace#*\\}"
 default_version=`perl -ne 'print if /(?:\"version\": \")(.*?)(?:\")/' './package.json'`

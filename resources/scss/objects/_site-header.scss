@@ -3,13 +3,19 @@
 ///
 /// @group  Objects
 /// @author Lee Anthony <seothemeswp@gmail.com>
-/// @link   https://github.com/seothemes/genesis-starter-theme
+/// @link   https://github.com/seothemes/base
 ////
 
 .site-header {
 	position: relative;
 	z-index: 1;
 	border-bottom: $base--border;
+	background-color: $color--white;
+
+	.js.has-sticky-header & {
+		position: fixed;
+		z-index: 100;
+	}
 
 	.wrap {
 		display: flex;

@@ -1,19 +1,19 @@
 <?php
 /**
- * Genesis Starter Theme
+ * Base
  *
  * WARNING: This file is should not be modified under any circumstances.
  * Customizations should be made in the form of a core-functionality
  * plugin so that the theme can be updated without losing changes.
  *
- * @package   SeoThemes\GenesisStarterTheme
- * @link      https://seothemes.com/genesis-starter-theme
+ * @package   SeoThemes\Base
+ * @link      https://github.com/seothemes/base
  * @author    SEO Themes
- * @copyright Copyright © 2018 SEO Themes
+ * @copyright Copyright © 2019 SEO Themes
  * @license   GPL-3.0-or-later
  */
 
-namespace SeoThemes\GenesisStarterTheme;
+namespace SeoThemes\Base;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {

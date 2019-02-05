@@ -1,9 +1,9 @@
 ## Submit a feature request or bug report
 
-- [ ] I've read the [guidelines for Contributing](https://github.com/seothemes/genesis-starter-theme/blob/master/.github/CONTRIBUTING.md)
+- [ ] I've read the [guidelines for Contributing](https://github.com/seothemes/base/blob/master/.github/CONTRIBUTING.md)
 - [ ] This is a feature request
 - [ ] This is a bug report
-- [ ] This request isn't a duplicate of an [existing issue](https://github.com/seothemes/genesis-starter-theme/issues)
+- [ ] This request isn't a duplicate of an [existing issue](https://github.com/seothemes/base/issues)
 - [ ] This is not a personal support request that should be asked via [SEO Themes Support](https://seothemes.com/support)
 
 <!-- Replace any `X` with your information. -->
