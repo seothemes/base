@@ -54,7 +54,7 @@ npm manifest:
       "stylelint-order": "^0.8.1"
     },
     "theme": {
-      "name": "Genesis Starter Theme",
+      "name": "Base",
       "uri": "https://github.com/seothemes/base/",
       "authoruri": "https://seothemes.com",
       "licenseuri": "http://www.gnu.org/licenses/gpl-2.0.html",

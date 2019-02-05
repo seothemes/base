@@ -2,7 +2,7 @@
 # Theme setup.
 
 # Defaults
-default_name="Genesis Starter Theme"
+default_name="Base"
 default_id="base"
 default_author="SEO Themes"
 default_author_url="https://seothemes.com"

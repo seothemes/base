@@ -1,4 +1,4 @@
-# Genesis Starter Theme
+# Base Theme
 
 [![WordPress](https://img.shields.io/badge/wordpress-4.9.8%20tested-brightgreen.svg)]() [![License](https://img.shields.io/badge/license-GPL--3.0--or--later-blue.svg)](https://github.com/seothemes/base/blob/master/LICENSE.md)
 
@@ -8,7 +8,7 @@ It uses Composer to pull in the [Core](https://github.com/seothemes/core) compon
 
 Check out the [live demo](https://demo.seothemes.com/genesis-starter)
 
-<img src="https://seothemes.com/wp-content/uploads/2018/09/starter-screenshot.png" alt="Genesis Starter Theme screenshot" width="500">
+<img src="https://seothemes.com/wp-content/uploads/2018/09/starter-screenshot.png" alt="Base screenshot" width="500">
 
 ## Table of Contents
 
@@ -27,7 +27,7 @@ Check out the [live demo](https://demo.seothemes.com/genesis-starter)
 
 ## Features
 
-The Genesis Starter Theme aims to modernize, organize and enhance some aspects of Genesis child theme development. Take a look at what is waiting for you:
+The Base aims to modernize, organize and enhance some aspects of Genesis child theme development. Take a look at what is waiting for you:
 
 - [Bourbon](https://github.com/seothemes/base/tree/master/resources/scss) as a lightweight Sass toolkit
 - [Gulp](https://gulpjs.com/) for automating development build tasks
@@ -57,7 +57,7 @@ The Genesis Starter Theme aims to modernize, organize and enhance some aspects o
 
 ### One line command:
 
-Install the latest development version of the Genesis Starter Theme using Composer from your WordPress themes directory (replace `your-theme-name` below with the name of your theme):
+Install the latest development version of the Base using Composer from your WordPress themes directory (replace `your-theme-name` below with the name of your theme):
 
 ```shell
 composer create-project seothemes/base your-theme-name dev-master && cd "$(\ls -1dt ./*/ | head -n 1)" && sh setup.sh
@@ -65,7 +65,7 @@ composer create-project seothemes/base your-theme-name dev-master && cd "$(\ls -
 
 ### Individual commands:
 
-Install the latest development version of the Genesis Starter Theme using Composer from your WordPress themes directory (replace `your-theme-name` below with the name of your theme):
+Install the latest development version of the Base using Composer from your WordPress themes directory (replace `your-theme-name` below with the name of your theme):
 
 ```shell
 composer create-project seothemes/base your-theme-name dev-master
@@ -85,9 +85,9 @@ sh setup.sh
 
 ## Setup
 
-The Genesis Starter Theme includes a powerful setup script which automates the process of updating theme details:
+The Base includes a powerful setup script which automates the process of updating theme details:
 
-<a href="https://github.com/seothemes/base/blob/master/setup.sh" target="_blank"><img src="https://seothemes.com/wp-content/uploads/2018/07/base-setup-script.png" alt="Genesis Starter Theme setup script" width="500"></a>
+<a href="https://github.com/seothemes/base/blob/master/setup.sh" target="_blank"><img src="https://seothemes.com/wp-content/uploads/2018/07/base-setup-script.png" alt="Base setup script" width="500"></a>
 
 It replaces the following details with your own:
 
@@ -101,7 +101,7 @@ It replaces the following details with your own:
 
 ## Usage
 
-The Genesis Starter Theme is intended to be used with [SEO Themes Core](https://packagist.org/packages/seothemes/core). All changes to the child theme should be made via the theme configuration file. This can be used to change almost every aspect of the theme, including theme features, navigation menus, image sizes, widget areas and more. An example config file is included with this theme.
+The Base is intended to be used with [SEO Themes Core](https://packagist.org/packages/seothemes/core). All changes to the child theme should be made via the theme configuration file. This can be used to change almost every aspect of the theme, including theme features, navigation menus, image sizes, widget areas and more. An example config file is included with this theme.
 
 Components are only loaded when a config key is provided. They can be added or removed depending on the requirements of your project. For example, to remove the PluginActivation component, simply remove it's config key from the return statement in `config/defaults.php`.
 
