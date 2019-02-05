@@ -3,7 +3,7 @@
 ///
 /// @group  Objects
 /// @author Lee Anthony <seothemeswp@gmail.com>
-/// @link   https://github.com/seothemes/genesis-starter-theme
+/// @link   https://github.com/seothemes/base
 ////
 
 .site-footer {
@@ -19,7 +19,10 @@
 // Footer credits layout.
 .footer-credits {
 	padding: $spacing--l 0;
-	border-top: $base--border;
+
+	.footer-widgets + & {
+		border-top: $base--border;
+	}
 
 	p {
 		margin-bottom: 0;

@@ -1,15 +1,15 @@
 <?php
 /**
- * Genesis Starter Theme
+ * Theme config.
  *
- * @package   SeoThemes\GenesisStarterTheme
- * @link      https://seothemes.com/genesis-starter-theme
+ * @package   SeoThemes\Base
+ * @link      https://github.com/seothemes/base
  * @author    SEO Themes
- * @copyright Copyright © 2018 SEO Themes
+ * @copyright Copyright © 2019 SEO Themes
  * @license   GPL-3.0-or-later
  */
 
-namespace SeoThemes\GenesisStarterTheme;
+namespace SeoThemes\Base;
 
 use SeoThemes\Core\AssetLoader;
 use SeoThemes\Core\Constants;
@@ -41,8 +41,8 @@ $core_assets = [
 			AssetLoader::LOCALIZE => [
 				AssetLoader::LOCALIZEVAR  => 'genesis_responsive_menu',
 				AssetLoader::LOCALIZEDATA => [
-					'mainMenu'         => '<span class="hamburger"></span><span class="screen-reader-text">' . __( 'Menu', 'genesis-starter-theme' ) . '</span>',
-					'subMenu'          => __( 'Sub Menu', 'genesis-starter-theme' ),
+					'mainMenu'         => '<span class="hamburger"></span><span class="screen-reader-text">' . __( 'Menu', 'base' ) . '</span>',
+					'subMenu'          => __( 'Sub Menu', 'base' ),
 					'menuIconClass'    => null,
 					'subMenuIconClass' => null,
 					'menuClasses'      => [
@@ -100,7 +100,7 @@ $core_customizer = [
 	Customizer::SECTIONS => [
 		[
 			Customizer::ID    => 'single_posts',
-			Customizer::TITLE => __( 'Single Posts', 'genesis-starter-theme' ),
+			Customizer::TITLE => __( 'Single Posts', 'base' ),
 			Customizer::PANEL => 'genesis',
 		],
 	],
@@ -108,9 +108,16 @@ $core_customizer = [
 		[
 			Customizer::CONTROL_TYPE  => 'checkbox',
 			Customizer::SETTINGS      => 'single_post_featured_image',
-			Customizer::LABEL         => __( 'Display featured image?', 'genesis-starter-theme' ),
+			Customizer::LABEL         => __( 'Display featured image?', 'base' ),
 			Customizer::SECTION       => 'single_posts',
 			Customizer::DEFAULT_VALUE => true,
+		],
+		[
+			Customizer::CONTROL_TYPE  => 'checkbox',
+			Customizer::SETTINGS      => 'sticky_header',
+			Customizer::LABEL         => __( 'Enable sticky header?', 'base' ),
+			Customizer::SECTION       => 'genesis_layout',
+			Customizer::DEFAULT_VALUE => false,
 		],
 	],
 ];
@@ -187,12 +194,6 @@ $core_custom_colors = [
 	],
 ];
 
-$core_example = [
-	Example::SUB_CONFIG => [
-		Example::KEY => 'value',
-	],
-];
-
 $core_genesis_settings = [
 	GenesisSettings::DEFAULTS => [
 		GenesisSettings::SITE_LAYOUT => 'full-width-content',
@@ -233,16 +234,6 @@ $core_hero_section = [
 $core_hooks = [
 	Hooks::ADD    => [
 		[
-			Hooks::TAG      => 'template_include',
-			Hooks::CALLBACK => function ( $template ) {
-				if ( ! is_front_page() || 'posts' === get_option( 'show_on_front' ) ) {
-					return $template;
-				}
-
-				return get_stylesheet_directory() . '/resources/views/page-front.php';
-			}
-		],
-		[
 			Hooks::TAG      => 'wp_enqueue_scripts',
 			Hooks::CALLBACK => 'genesis_enqueue_main_stylesheet',
 			Hooks::PRIORITY => 99,
@@ -265,6 +256,10 @@ $core_hooks = [
 
 				if ( is_front_page() ) {
 					$classes[] = 'front-page';
+				}
+
+				if ( true === get_theme_mod( 'sticky_header', false ) ) {
+					$classes[] = 'has-sticky-header';
 				}
 
 				$classes[] = 'no-js';
@@ -341,7 +336,7 @@ $core_hooks = [
 				if ( 'open' == $original_output ) {
 					$output = '<div class="footer-credits">' . $output;
 				} elseif ( 'close' == $original_output ) {
-					$backtotop = '<a href="#" rel="nofollow" class="backtotop">' . __( 'Return to top', 'genesis-starter-theme' ) . '</a>';
+					$backtotop = '<a href="#" rel="nofollow" class="backtotop">' . __( 'Return to top', 'base' ) . '</a>';
 					$output    = $backtotop . $output . $output;
 				}
 
@@ -459,7 +454,7 @@ $core_layouts = [
 	PageLayouts::REGISTER   => [
 		[
 			'id'    => 'center-content',
-			'label' => __( 'Center Content', 'genesis-starter-theme' ),
+			'label' => __( 'Center Content', 'base' ),
 			'img'   => get_stylesheet_directory_uri() . '/resources/img/center-content.gif',
 		]
 	],
@@ -475,7 +470,7 @@ $core_layouts = [
 
 $core_page_templates = [
 	PageTemplate::REGISTER => [
-		'/resources/views/page-full.php'    => 'Full Width',
+		'/resources/views/page-blocks.php'  => 'Blocks',
 		'/resources/views/page-landing.php' => 'Landing Page',
 	],
 ];
@@ -530,7 +525,7 @@ $core_simple_social_icons = [
 ];
 
 $core_textdomain = [
-	TextDomain::DOMAIN => 'genesis-starter-theme',
+	TextDomain::DOMAIN => 'base',
 ];
 
 $core_theme_support = [
@@ -573,8 +568,8 @@ $core_theme_support = [
 		'genesis-after-entry-widget-area',
 		'genesis-footer-widgets'      => 3,
 		'genesis-menus'               => [
-			'primary'   => __( 'Header Menu', 'genesis-starter-theme' ),
-			'secondary' => __( 'After Header Menu', 'genesis-starter-theme' ),
+			'primary'   => __( 'Header Menu', 'base' ),
+			'secondary' => __( 'After Header Menu', 'base' ),
 		],
 		'genesis-responsive-viewport' => null,
 		'genesis-structural-wraps'    => [
@@ -606,8 +601,8 @@ $core_widget_areas = [
 	WidgetArea::REGISTER   => [
 		[
 			WidgetArea::ID           => 'front-page-1',
-			WidgetArea::NAME         => __( 'Front Page 1', 'genesis-starter-theme' ),
-			WidgetArea::DESCRIPTION  => __( 'Front Page 1 widget area.', 'genesis-starter-theme' ),
+			WidgetArea::NAME         => __( 'Front Page 1', 'base' ),
+			WidgetArea::DESCRIPTION  => __( 'Front Page 1 widget area.', 'base' ),
 			WidgetArea::LOCATION     => 'genesis_loop',
 			WidgetArea::BEFORE_TITLE => '<h1 itemprop="headline">',
 			WidgetArea::AFTER_TITLE  => '</h1>',
@@ -624,8 +619,8 @@ $core_widget_areas = [
 		],
 		[
 			WidgetArea::ID          => 'front-page-2',
-			WidgetArea::NAME        => __( 'Front Page 2', 'genesis-starter-theme' ),
-			WidgetArea::DESCRIPTION => __( 'Front Page 2 widget area.', 'genesis-starter-theme' ),
+			WidgetArea::NAME        => __( 'Front Page 2', 'base' ),
+			WidgetArea::DESCRIPTION => __( 'Front Page 2 widget area.', 'base' ),
 			WidgetArea::LOCATION    => 'genesis_loop',
 			WidgetArea::CONDITIONAL => function () {
 				return is_front_page();
@@ -633,8 +628,8 @@ $core_widget_areas = [
 		],
 		[
 			WidgetArea::ID          => 'front-page-3',
-			WidgetArea::NAME        => __( 'Front Page 3', 'genesis-starter-theme' ),
-			WidgetArea::DESCRIPTION => __( 'Front Page 3 widget area.', 'genesis-starter-theme' ),
+			WidgetArea::NAME        => __( 'Front Page 3', 'base' ),
+			WidgetArea::DESCRIPTION => __( 'Front Page 3 widget area.', 'base' ),
 			WidgetArea::LOCATION    => 'genesis_loop',
 			WidgetArea::CONDITIONAL => function () {
 				return is_front_page();
@@ -651,7 +646,6 @@ return [
 	Constants::class         => $core_constants,
 	Customizer::class        => $core_customizer,
 	CustomColors::class      => $core_custom_colors,
-	Example::class           => $core_example,
 	GenesisSettings::class   => $core_genesis_settings,
 	GoogleFonts::class       => $core_google_fonts,
 	HeroSection::class       => $core_hero_section,

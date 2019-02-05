@@ -1,4 +1,12 @@
-var genesis_starter_theme = (function ($) {
+/**
+ * Custom JavaScript.
+ *
+ * @package SeoThemes\Base
+ * @author  SEO Themes
+ * @license GPL-3.0-or-later
+ */
+
+var baseScripts = (function ($) {
     'use strict';
 
     /**
@@ -13,6 +21,15 @@ var genesis_starter_theme = (function ($) {
 
             // Initialize fitVids script.
             $('.site-container').fitVids();
+
+            // Adjust site inner margin for fixed header.
+            var siteInnerMarginTop = 0;
+
+            if ($('.site-header').css('position') === 'fixed') {
+                siteInnerMarginTop = $('.site-header').outerHeight();
+            }
+
+            $('.site-inner').css('margin-top', siteInnerMarginTop);
         },
 
         /**
@@ -35,4 +52,4 @@ var genesis_starter_theme = (function ($) {
 
 })(jQuery);
 
-jQuery(genesis_starter_theme.ready);
+jQuery(baseScripts.ready);

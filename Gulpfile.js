@@ -35,7 +35,6 @@ toolkit.extendConfig(
 			js: ['resources/js/**/*.js', '!node_modules/**'],
 			json: ['**/*.json', '!node_modules/**'],
 			i18n: './resources/lang/',
-			sassdoc: './resources/scss/**/*.scss',
 			zip: [
 				'./**/*',
 				'!./*.zip',
@@ -96,10 +95,5 @@ toolkit.extendTasks( gulp, {
 		return globs(toolkit.config.src.zip, {base: './'}).
 		pipe(zip(pkg.name + '-' + pkg.version + '.zip')).
 		pipe(gulp.dest('../'));
-	},
-    'sassdoc': function () {
-    	return gulp.src(toolkit.config.src.sassdoc)
-        .pipe(sassdoc(toolkit.config.css.sassdoc))
-        .resume();
 	}
 } );

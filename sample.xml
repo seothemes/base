@@ -26,7 +26,7 @@
 >
 
 <channel>
-	<title>Genesis Starter Theme</title>
+	<title>Base</title>
 	<link>https://demo.seothemes.com/genesis-starter</link>
 	<description>Just another starter theme</description>
 	<pubDate>Tue, 09 Oct 2018 10:17:07 +0000</pubDate>
@@ -5642,7 +5642,7 @@ Isn't it beautiful.]]></content:encoded>
 			<!-- wp:paragraph -->
 			<p>Here is an example of the core pull quote block, set to display with the wide-aligned attribute, if the theme allows it. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
 			<!-- /wp:paragraph -->
-		
+
 				<!-- wp:pullquote {"align":"wide"} -->
 				<blockquote class="wp-block-pullquote alignwide">
 					<p>Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed ibendum nulla sed consectetur. </p><cite>Rich Tabor, Founder at ThemeBeans.com</cite></blockquote>
@@ -5664,7 +5664,7 @@ Isn't it beautiful.]]></content:encoded>
 				<!-- wp:paragraph -->
 				<p>Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
 				<!-- /wp:paragraph -->
-			
+
 			<!-- wp:pullquote {"align":"left"} -->
 			<blockquote class="wp-block-pullquote alignleft">
 				<p>Here we have a left-aligned pullquote.</p><cite>Rich Tabor</cite></blockquote>
@@ -5704,7 +5704,7 @@ Isn't it beautiful.]]></content:encoded>
 					<figcaption>And an image with a caption</figcaption>
 				</figure>
 			<!-- /wp:image -->
-		
+
 				<!-- wp:heading {"level":3} -->
 				<h3>Wide aligned</h3>
 				<!-- /wp:heading -->
@@ -5722,7 +5722,7 @@ Isn't it beautiful.]]></content:encoded>
 					<figcaption>Here is an example of an image block caption</figcaption>
 				</figure>
 				<!-- /wp:image -->
-			
+
 			<!-- wp:paragraph -->
 			<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 			<!-- /wp:paragraph -->
@@ -5756,7 +5756,7 @@ Isn't it beautiful.]]></content:encoded>
 			<!-- wp:paragraph -->
 			<p>Lets check out the positioning and styling of the video core block. We will check the wide and full alignments too.</p>
 			<!-- /wp:paragraph -->
-		
+
 				<!-- wp:heading {"level":3} -->
 				<h3>Wide aligned</h3>
 				<!-- /wp:heading -->
@@ -5777,7 +5777,7 @@ Isn't it beautiful.]]></content:encoded>
 					https://vimeo.com/243191812
 				</figure>
 				<!-- /wp:core-embed/vimeo -->
-			
+
 			<!-- wp:heading {"level":2} -->
 			<h2>Cover Image Block</h2>
 			<!-- /wp:heading -->
@@ -5786,7 +5786,7 @@ Isn't it beautiful.]]></content:encoded>
 			<p>Check out the positioning and styling of the cover image core block. We will check the wide and full alignments, as well as left/right.</p>
 			<!-- /wp:paragraph -->
 
-		
+
 				<!-- wp:heading {"level":3} -->
 				<h3>Wide aligned</h3>
 				<!-- /wp:heading -->
@@ -5810,7 +5810,7 @@ Isn't it beautiful.]]></content:encoded>
 				<!-- wp:paragraph -->
 				<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. </p>
 				<!-- /wp:paragraph -->
-			
+
 			<!-- wp:cover-image {"url":"https://demo.seothemes.com/genesis-starter/wp-content/plugins/block-unit-test/assets/images/placeholder.jpg","align":"left","id":2117} -->
 			<div class="wp-block-cover-image has-background-dim alignleft" style="background-image:url(https://demo.seothemes.com/genesis-starter/wp-content/plugins/block-unit-test/assets/images/placeholder.jpg)">
 				<p class="wp-block-cover-image-text">Left Aligned Cover Image</p>
@@ -5844,7 +5844,7 @@ Isn't it beautiful.]]></content:encoded>
 			<!-- wp:separator -->
 			<hr class="wp-block-separator" />
 			<!-- /wp:separator -->
-		
+
 			<!-- wp:heading {"level":2} -->
 			<h2>Gallery Blocks</h2>
 			<!-- /wp:heading -->
@@ -6055,7 +6055,7 @@ Isn't it beautiful.]]></content:encoded>
 				</li>
 			</ul>
 			<!-- /wp:gallery -->
-		
+
 				<!-- wp:heading {"level":2} -->
 				<h2>Wide aligned Gallery Blocks</h2>
 				<!-- /wp:heading -->

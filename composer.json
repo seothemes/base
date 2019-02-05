@@ -1,5 +1,5 @@
 {
-  "name": "seothemes/genesis-starter-theme",
+  "name": "seothemes/base",
   "type": "wordpress-theme",
   "description": "Genesis starter theme with a modern development workflow.",
   "keywords": [
@@ -16,18 +16,17 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/seothemes/genesis-starter-theme/issues",
-    "source": "https://github.com/seothemes/genesis-starter-theme"
+    "issues": "https://github.com/seothemes/base/issues",
+    "source": "https://github.com/seothemes/base"
   },
   "require": {
     "php": ">=5.4",
-    "seothemes/core": "dev-master",
-    "tgmpa/tgm-plugin-activation": "dev-develop"
+    "seothemes/core": "dev-master"
   },
   "require-dev": {},
   "autoload": {
     "psr-4": {
-      "SeoThemes\\GenesisStarterTheme\\": "app/"
+      "SeoThemes\\Base\\": "app/"
     }
   },
   "suggest": {},

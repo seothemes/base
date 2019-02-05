@@ -1,4 +1,4 @@
-# Copyright (C) 2018 Base 3.3.3
+# Copyright (C) 2019 Base 3.3.3
 # This file is distributed under the same license as the Base 3.3.3 package.
 msgid ""
 msgstr ""
@@ -29,42 +29,46 @@ msgstr ""
 msgid "Display featured image?"
 msgstr ""
 
-#: config/defaults.php:344
+#: config/defaults.php:118
+msgid "Enable sticky header?"
+msgstr ""
+
+#: config/defaults.php:339
 msgid "Return to top"
 msgstr ""
 
-#: config/defaults.php:462
+#: config/defaults.php:457
 msgid "Center Content"
 msgstr ""
 
-#: config/defaults.php:576
+#: config/defaults.php:571
 msgid "Header Menu"
 msgstr ""
 
-#: config/defaults.php:577
+#: config/defaults.php:572
 msgid "After Header Menu"
 msgstr ""
 
-#: config/defaults.php:609
+#: config/defaults.php:604
 msgid "Front Page 1"
 msgstr ""
 
-#: config/defaults.php:610
+#: config/defaults.php:605
 msgid "Front Page 1 widget area."
 msgstr ""
 
-#: config/defaults.php:627
+#: config/defaults.php:622
 msgid "Front Page 2"
 msgstr ""
 
-#: config/defaults.php:628
+#: config/defaults.php:623
 msgid "Front Page 2 widget area."
 msgstr ""
 
-#: config/defaults.php:636
+#: config/defaults.php:631
 msgid "Front Page 3"
 msgstr ""
 
-#: config/defaults.php:637
+#: config/defaults.php:632
 msgid "Front Page 3 widget area."
 msgstr ""
